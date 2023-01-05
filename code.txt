@@ -1,0 +1,5 @@
+instal Microsoft.EntityFrameworkCore.SqlServer
+install Microsoft.EntityFrameworkCore.Tools
+
+run nuget: Scaffold-DbContext " ... ;TrustServerCertificate=True" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+example: Scaffold-DbContext "Data Source=DESKTOP-HLKNG4F;Initial Catalog=wpf_practice;Integrated Security=True;TrustServerCertificate=True" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
